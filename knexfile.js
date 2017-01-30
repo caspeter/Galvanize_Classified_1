@@ -4,14 +4,14 @@ module.exports = {
 
     development: {
         client: 'pg',
-        connection: 'galvanize-classified-dev'
+        connection: 'postgres://localhost/classified_dev'
     },
     test: {
         client: 'pg',
-        connection: 'galvanize-classified-test'
+        connection: 'postgres://localhost/classified_test'
     },
     production: {
         client: 'pg',
-        connection: 'process.env.DATABASE_URL'
+        connection: process.env.DATABASE_URL
     }
 };
